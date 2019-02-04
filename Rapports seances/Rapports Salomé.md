@@ -88,3 +88,15 @@ Nous utilisons un capteur de distance qui affiche l'heure lorsqu'on s'approche �
 <img src="Images-import/ecran oled heure.jpg" alt="voir image  dans le fichier img-import"/>
 </br>
 Je voudrais ensuite que les minutes s'affichent sur le deuxième écran. Cependant,  je ne sais pas s'il est possible de brancher deux écrans oled sur un arduino. Il y a deux branchement à faire pour l'écran et c'est sur des ports par défaut et je n'ai pas trouvé sur internet de moyen de choisir les ports nous même.
+
+
+<h1> Rapport du 04/02:</h1>
+
+<p>
+ 
+ <h2>Câblage de deux écran OLED sur un arduino</h2>
+ 
+ L’écran OLED est connecté en utilisant les broches i2c de l'arduino. Il faut utiliser les broches A4 et A5. Pour utiliser un deuxième écran sur le même arduino, il faut configurer l'adresse i2c. D'après ce site, https://github.com/ThingPulse/esp8266-oled-ssd1306/issues/179, il faut déssouder la résistance du 0x78 et la ressouder sur le 0x7A, pour changer l'addresse de 0x3C en 0x3D. 
+ 
+
+
